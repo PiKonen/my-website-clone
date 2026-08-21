@@ -118,12 +118,10 @@ function LandingPage() {
           this does not: the display-type h1 (Nav sets the site name as a span at
           text/body/md/em) and the mobile stack, since Nav is one row at every
           width. */}
-      <Nav
+     <Nav
         siteName={content["label.SiteName"]}
         links={MENU.map((item) => ({ label: content[item.key], href: item.href }))}
       />
-
-      <div className="mx-auto flex max-w-5xl flex-col gap-large px-large py-extra-large md:gap-small md:px-extra-large md:py-large">
         {/* Primary button at the top of the page */}
            <Button label="Test me" onClick={() => {}} />
 
